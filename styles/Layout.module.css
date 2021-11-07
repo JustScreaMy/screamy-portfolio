@@ -9,7 +9,6 @@
   background-color: #cd4631;
   margin: 0 0 40px 0;
   z-index: 10;
-  padding-inline: 10px;
 }
 .content {
   background-color: #fbfff1;
@@ -23,6 +22,13 @@
   cursor: pointer;
 }
 .link {
-  font-size: x-large;
+  height: 100%;
+  width: 100%;
+  line-height: 100px;
+  text-align: center;
+  font-size: xx-large;
   cursor: pointer;
+}
+.link:hover {
+  background-color: #922f20;
 }
