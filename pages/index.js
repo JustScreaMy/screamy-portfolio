@@ -31,27 +31,27 @@ export default function Home() {
         <p>
           Here are some languages I have tried and been able to do something
           with them:
-          <ul>
-            <li>Python</li>
-            <li>JavaScript</li>
-            <li>C</li>
-            <li>Go (Least knowledge)</li>
-            <li>PHP (Little more knowledge than Go)</li>
-            <li>HTML/CSS (I don&apos;t like CSS tho)</li>
-            <li>SQL</li>
-          </ul>
         </p>
-        <p>
-          Other skills and knowledge:
-          <ul>
-            <li>Git</li>
-            <li>Next.js</li>
-            <li>Flask</li>
-            <li>Arduino</li>
-            <li>Cisco IOS (Still learning)</li>
-            <li>Linux (Still learning)</li>
-          </ul>
-        </p>
+
+        <ul>
+          <li>Python</li>
+          <li>JavaScript</li>
+          <li>C</li>
+          <li>Go (Least knowledge)</li>
+          <li>PHP (Little more knowledge than Go)</li>
+          <li>HTML/CSS (I don&apos;t like CSS tho)</li>
+          <li>SQL</li>
+        </ul>
+        <p>Other skills and knowledge:</p>
+
+        <ul>
+          <li>Git</li>
+          <li>Next.js</li>
+          <li>Flask</li>
+          <li>Arduino</li>
+          <li>Cisco IOS (Still learning)</li>
+          <li>Linux (Still learning)</li>
+        </ul>
       </div>
     </Layout>
   )
