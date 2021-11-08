@@ -7,7 +7,7 @@ import useSWR from 'swr'
 const fetcher = (url) => fetch(url).then((r) => r.json())
 
 export default function Home() {
-  /*const { repositories, error } = useSWR(
+  const { data, error } = useSWR(
     'https://api.github.com/users/screamy159/repos',
     fetcher
   )
@@ -17,18 +17,17 @@ export default function Home() {
         <p className={style.error}>Failed to load!</p>
       </Layout>
     )
-  if (!repositories)
+  if (!data)
     return (
       <Layout>
-        <p>Loading... {repositories}</p>
+        <p>Loading...</p>
       </Layout>
-    )*/
+    )
   return (
     <Layout>
-      {/*repositories.map((repo) => (
+      {data.map((repo) => (
         <Repo key={repo.id} repository={repo}></Repo>
-      ))*/}
-      <p>Currently working on!</p>
+      ))}
     </Layout>
   )
 }
