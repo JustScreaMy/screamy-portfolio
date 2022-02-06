@@ -8,7 +8,7 @@ const fetcher = (url) => fetch(url).then((r) => r.json())
 
 export default function Home() {
   const { data, error } = useSWR(
-    'https://api.github.com/users/screamy159/repos',
+    'https://api.github.com/users/justscreamy/repos',
     fetcher
   )
   if (error)
