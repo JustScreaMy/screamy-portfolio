@@ -1,18 +1,24 @@
 import styles from '../styles/Layout.module.css'
 import Link from 'next/link'
+import Head from 'next/head'
 
 export default function Layout({ children }) {
   return (
-    <div>
-      <div className={styles.navbar}>
-        <Link href="/" passHref>
-          <p className={styles.link}>About</p>
-        </Link>
-        <Link href="/repos" passHref>
-          <p className={styles.link}>Projects</p>
-        </Link>
+    <>
+      <Head>
+        <title>JustScreaMy</title>
+      </Head>
+      <div>
+        <div className={styles.navbar}>
+          <Link href="/" passHref>
+            <a className={styles.link}>About</a>
+          </Link>
+          <Link href="/repos" passHref>
+            <a className={styles.link}>Projects</a>
+          </Link>
+        </div>
+        <div className={styles.content}>{children}</div>
       </div>
-      <div className={styles.content}>{children}</div>
-    </div>
+    </>
   )
 }
