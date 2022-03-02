@@ -1,9 +1,14 @@
 .card {
-  background-color: #f79f79;
-  margin: 10px 0;
+  background-color: #111111;
+  margin: 15px 0;
   padding: 15px;
   font-size: clamp(0.5rem, 3vw, 1rem);
+  border-radius: 10px;
+  border-left: 10px #d1cece solid;
+  text-align: left;
 }
 .icon {
   cursor: pointer;
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
 }

@@ -6,7 +6,7 @@ export default function Layout({ children }) {
     <div>
       <div className={styles.navbar}>
         <Link href="/" passHref>
-          <p className={styles.link}>Home</p>
+          <p className={styles.link}>About</p>
         </Link>
         <Link href="/repos" passHref>
           <p className={styles.link}>Projects</p>

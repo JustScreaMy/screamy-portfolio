@@ -1,33 +1,36 @@
 import style from '../styles/Home.module.css'
 import Layout from '../components/layout.js'
+import Separator from '../components/separator'
 
 export default function Home() {
   return (
     <Layout>
       <div>
         <h1>JustScreaMy</h1>
-        <p>
-          Hello! My name is Jakub Kropáček and I&apos;m from Czech Republic.
-        </p>
+        <p>Hello! My name is Jakub Kropáček and I&apos;m from Czechia.</p>
         <p>
           I have been interested in programming since my primary school, after I
           saw a Scratch icon on my desktop in computer science class. That
           didn&apos;t last long, after few days I found out about JavaScript on
           Youtube. And that is why I chose the path I&apos;m going on right now.
         </p>
+        <Separator />
         <p>
           I chose Technical School of Electrical Engineering and Computer
           Science as my secondary school (which I&apos;m still studying by now)
         </p>
+        <Separator />
         <p>
           I&apos;m mostly interested in Networking Technologies and
           Cybersecurity but that is only a plan for a university in my future.
         </p>
+        <Separator />
         <p>
           What I do right now is programming mostly for fun or trying to
           contribute on Open Source projects. I love learning and trying new
           technologies
         </p>
+        <Separator />
         <p>
           Here are some languages I have tried and been able to do something
           with them:

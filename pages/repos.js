@@ -11,18 +11,14 @@ export default function Home() {
     'https://api.github.com/users/justscreamy/repos',
     fetcher
   )
-  if (error)
+  if (error || data?.message === 'Not Found')
     return (
       <Layout>
-        <p className={style.error}>Failed to load!</p>
+        <p className={style.error}>Failed to load, please try again later.</p>
       </Layout>
     )
-  if (!data)
-    return (
-      <Layout>
-        <p>Loading...</p>
-      </Layout>
-    )
+  if (!data) return <Layout />
+
   return (
     <Layout>
       {data.map((repo) => (
