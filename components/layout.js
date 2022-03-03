@@ -7,6 +7,16 @@ export default function Layout({ children }) {
     <>
       <Head>
         <title>JustScreaMy</title>
+        <meta name="title" content="JustScreaMy" />
+        <meta
+          name="description"
+          content="Web portfolio of a czechia developer."
+        />
+        <meta name="keywords" content="programming, portfolio, nextjs" />
+        <meta name="robots" content="index, nofollow" />
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="language" content="English" />
+        <meta name="author" content="JustScreaMy" />
       </Head>
       <div>
         <div className={styles.navbar}>
