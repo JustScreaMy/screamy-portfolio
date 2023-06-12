@@ -21,9 +21,10 @@ export default function Home() {
 
   return (
     <Layout>
-      {data.map((repo) => (
-        <Repo key={repo.id} repository={repo}></Repo>
-      ))}
+      {data.map((repo) => {
+        if (!repo.fork) return <Repo key={repo.id} repository={repo}></Repo>
+      })}
     </Layout>
   )
 }
+
